@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        
+        .card {
+            margin: auto;
+            margin-top: 250px;
+            text-align: center;
+            width: 18rem;
+        }
+
+        .card-img-top {
+            height: 48%;
+            vertical-align: center;
+        }
+
+        #main {
+            font-size: 40px;
+            font-family: consolas;
+        }
+
+        .form-switch {
+            padding-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="card">
+        <div class="card-img-top">
+            <p class="main">Generate</p>
+        </div>
+        <hr>
+        <div class="card-body">
+            <h5 class="card-title">Color Gen</h5>
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+        </div>
+    </div> -->
+
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h1 class="card-title" id="main">Color</h1>
+            <hr>
+            <p>Random Color Generator</p>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="saturation">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Low Saturation</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="brightness">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Low Brightness</label>
+            </div>
+
+            <button class="btn btn-outline-primary" id="genbtn">Generate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
