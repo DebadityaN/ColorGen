@@ -2,6 +2,7 @@ button = document.getElementById('genbtn');
 saturation = document.getElementById('saturation');
 brightness = document.getElementById('brightness');
 main = document.getElementById('main');
+c = "black";
 
 button.onclick = function() {
     t = randColor();
@@ -11,6 +12,8 @@ button.onclick = function() {
 
     var clr = hslToHex(h, s, l);
     document.getElementsByTagName('body')[0].style['background'] = clr;
+    document.getElementsByTagName('body')[0].style['color'] = c;
+    document.getElementsByClassName('card')[0].style['background'] = clr;
     main.innerText = clr.toUpperCase();
 
 }
@@ -31,8 +34,10 @@ function randColor() {
 
     if (brightness.checked) {
         v = rand(20, 30);
+        c = "white";
     } else {
         v = rand(50, 70);
+        c = "black";
     }
 
     return [h, s, v];
